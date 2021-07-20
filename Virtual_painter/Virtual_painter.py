@@ -30,7 +30,7 @@ xp, yp = 0, 0
 imgCanvas = np.zeros((720, 1280, 3), np.uint8)
 imgInv = np.zeros((720, 1280, 3), np.uint8)
 
-detector = htm.HandDetector(maxHands=1, detectionCon=0.75)
+detector = htm.HandDetector(maxHands=1)
 
 while(True):
     success, img = cap.read()
